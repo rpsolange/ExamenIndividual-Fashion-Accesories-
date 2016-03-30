@@ -1,0 +1,46 @@
+doctype
+html
+	head
+		title Fashion Accesories Home
+		include enlace.jade
+	
+	body
+		include mixin
+		include header.jade
+		section.contat-us
+			div.bg-black
+				div.container
+					div.row
+						div.col-md-7
+							p CONTACT US
+						div.col-md-5
+							p.strong Contact info
+							p phone: 0(1234)567890
+							p Mail:Infor@roadthemes.com
+							p Address: No 40 Baria Street 133/2 NewYork City, NY, United States.
+
+		section.map
+			div.row
+				div.col-md-6
+					iframe(src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15611.579655307103!2d-77.0852257!3d-11.9817728!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1459366969319", width="100%", height="450", frameborder="0", style="border:0", allowfullscreen)
+				div.col-md-6
+					form
+						div.row
+							div.col-md-6.form-group
+								input.form-control(type="text" placeholder="First Name")
+							div.col-md-6.form-group
+								input.form-control(type="text" placeholder="Last name")
+						div.row
+							div.col-md-6.form-group
+								input.form-control(type="email" placeholder="Email")
+							dic.col-md-6.form-group
+								input.form-control(type="text" placeholder="Wbsite")
+						div.form-group
+							input.form-control(type="text" placeholder="Subject")
+						div.form-group
+							textarea.form-control(name="", cols="30", rows="10" placeholder="Message")
+						button.btn.btn-default(type="submit") Send
+		include footer.jade
+
+		script(src="js/jquery.js")
+		script(src="js/bootstrap.min.js")

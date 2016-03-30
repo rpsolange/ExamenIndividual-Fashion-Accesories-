@@ -1,0 +1,35 @@
+section.blog
+	div.container
+		div.text-center
+			h4 
+				i.fa.fa-angle-left 
+				a(href="#") BLOG 
+				i.fa.fa-angle-right
+	
+		div.row
+			div.col-md-3
+				img(src="images/blog2.jpg", alt="")
+				+blog-texto
+			div.col-md-3
+				img(src="images/blog1.jpg", alt="")
+				+blog-texto
+			div.col-md-3
+				img(src="images/blog2.jpg", alt="")
+				+blog-texto
+			div.col-md-3
+				img(src="images/blog3.jpg", alt="")
+				+blog-texto
+			
+		div.row
+			div.col-md-4
+				div
+					i.fa.fa-phone-square
+					+blog-box("ORDER ONLINE NOW", "Call Us: (0123)456789")
+			div.col-md-4
+				div
+					i.fa.fa-plane
+					+blog-box("FREE WORLDWIDE SHIPPING", "On Order Over $100")
+			div.col-md-4
+				div
+					i.fa.fa-money
+					+blog-box("30 DAYS MONEY BACK 100%", "Satisfaction Guarantee")

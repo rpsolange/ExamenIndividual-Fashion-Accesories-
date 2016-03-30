@@ -1,0 +1,62 @@
+mixin footer-box(title, valor1, valor2, valor3, valor4)
+	div.col-md-2
+		h4=title
+			ul
+				li
+					a(href="#")
+						i.fa.fa-caret-right
+							span=valor1
+				li
+					a(href="#")
+						i.fa.fa-caret-right
+							span=valor2
+				li
+					a(href="#")
+						i.fa.fa-caret-right
+							span=valor3
+				li
+					a(href="#")
+						i.fa.fa-caret-right
+							span=valor4
+mixin deliver
+	p.text-center Deliver Wide
+	i.fa.fa-star
+	i.fa.fa-star
+	i.fa.fa-star
+	i.fa.fa-star-o
+	i.fa.fa-star-o
+
+mixin clothe-buy
+	p Deliver Wide
+	div
+		p.no-price $242.00
+		p.price $218.00
+	i.fa.fa-star
+	i.fa.fa-star
+	i.fa.fa-star
+	i.fa.fa-star-o
+	i.fa.fa-star-o
+	button
+		i.fa.fa-shopping-cart 
+			span Add to Cart
+mixin clothe
+	p Deliver Wide
+	p.price $218.00
+	i.fa.fa-star
+	i.fa.fa-star
+	i.fa.fa-star
+	i.fa.fa-star-o
+	i.fa.fa-star-o
+	button
+		i.fa.fa-shopping-cart 
+			span Add to Cart
+
+mixin blog-texto
+	h4 THE SAMPLE HEADING TITLE
+	p 27/11/2015
+	p Lorem ipsum dolor sit amet, consectetur adipisicing ing elit, sed do...
+	a.text-red(href="#") Read more
+
+mixin blog-box(title, text)
+	h4=title
+	p=text
